@@ -35,7 +35,7 @@ fn count_lines_in_file(path: &str) -> Result<u64, std::io::Error> {
 
 fn main() {
     let args: Vec<String> = env::args().collect();
-    dbg!(args.clone());
+    // dbg!(args.clone());
 
     if args.len() == 2 {
         // Default Case (only file location)
@@ -83,7 +83,7 @@ fn main() {
                     )
                 }
                 _ => {
-                    // Handle any other possible values of flag
+                    println!("Wrong flag entered!");
                 }
             }
         }
